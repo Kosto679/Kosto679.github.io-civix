@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Civix — Δημοσιεύσεις νομοθεσίας σε κατανοητή, δομημένη, αξιόπιστη ελληνική γλώσσα." />
+  <title>Civix Greece — Νομοθεσία σε απλή γλώσσα</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="icon-gavel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381"/>
+      <path d="m16 16 6-6"/>
+      <path d="m21.5 10.5-8-8"/>
+      <path d="m8 8 6-6"/>
+      <path d="m8.5 7.5 8 8"/>
+    </symbol>
+  </svg>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Κύρια πλοήγηση">
+      <a class="nav-brand" href="#top">
+        <span class="gavel-icon" aria-hidden="true">
+          <svg><use href="#icon-gavel"/></svg>
+        </span>
+        <span>Civix Greece</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Μενού">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#features">Δυνατότητες</a></li>
+        <li><a href="#preview">Προεπισκόπηση</a></li>
+        <li><a href="#pipeline">Πώς λειτουργεί</a></li>
+        <li><a href="#trust">Αξιοπιστία</a></li>
+        <li><a class="nav-cta" href="#get-started">Ξεκινήστε</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-lines"></div>
+      </div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow reveal">Νομοθεσία · Απλή γλώσσα · Ελλάδα</p>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Η νομοθεσία,<br />
+          <span class="gradient-text">κατανοητή για όλους.</span>
+        </h1>
+        <p class="hero-lead reveal reveal-delay-2">
+          Το Civix μετατρέπει σύνθετα νομοσχέδια και ΦΕΚ σε δομημένες, αξιόπιστες περιλήψεις —
+          όχι απλά «μικρότερο κείμενο». Συνδέεται με επίσημες πηγές και αναφέρει άρθρα.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a class="btn btn-primary" href="#get-started">Δείτε πώς λειτουργεί</a>
+          <a class="btn btn-ghost" href="#features">Εξερευνήστε</a>
+        </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="stat">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Δομημένες ενότητες ανά νόμο</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">ΦΕΚ</span>
+            <span class="stat-label">Επίσημες πηγές &amp; Βουλή</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">RAG</span>
+            <span class="stat-label">Τεκμηριωμένη τεχνητή νοημοσύνη</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Καινοτομία</p>
+          <h2>Όχι απλά σύνοψη.<br />Κατανόηση με δομή.</h2>
+          <p class="section-lead">
+            Κάθε νομοθετικό κείμενο παρουσιάζεται με σταθερή δομή — ώστε να ξέρετε τι αλλάζει,
+            ποιους αφορά και τι να ελέγξετε πριν αποφασίσετε.
+          </p>
+        </header>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>
+            </div>
+            <h3>Δομημένες περιλήψεις</h3>
+            <p>Σύνοψη, Σκοπός, Ποιους αφορά, Κύριες αλλαγές, Επίμαχα σημεία — κάθε φορά με τον ίδιο σκελετό.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Επίσημες πηγές</h3>
+            <p>Σύνδεσμοι προς ΦΕΚ, Βουλή και EUR-Lex. Κάθε ισχυρισμός στοχεύει σε συγκεκριμένα άρθρα.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6M11 8v6"/></svg>
+            </div>
+            <h3>Αναζήτηση &amp; φίλτρα</h3>
+            <p>Κατηγορίες, ημερομηνίες ΦΕΚ, αναζήτηση κειμένου — βρείτε γρήγορα αυτό που σας αφορά.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3>Χρονολόγιο νομοθεσίας</h3>
+            <p>Παρακολουθήστε το στάδιο κάθε νομοσχεδίου — από την κατάθεση μέχρι τη δημοσίευση.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Αποθηκευμένα</h3>
+            <p>Κρατήστε τους νόμους που σας ενδιαφέρουν — συγχρονισμένα με τον λογαριασμό σας.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </div>
+            <h3>Φωτεινό &amp; σκοτεινό</h3>
+            <p>Διαβάστε άνετα — η εφαρμογή προσαρμόζεται στο θέμα του συστήματός σας.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="preview">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Προεπισκόπηση</p>
+          <h2>Δείτε το Civix σε δράση</h2>
+          <p class="section-lead">Πραγματικές οθόνες από την εφαρμογή — περιηγηθείτε, διαβάστε περιλήψεις, ελέγξτε πηγές.</p>
+        </header>
+        <div class="preview-carousel" role="region" aria-label="Προεπισκόπηση εφαρμογής">
+          <div class="preview-track">
+            <article class="preview-panel active" data-panel="browse">
+              <div class="preview-label">[ Αρχική ]</div>
+              <div class="preview-content">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/home.png" alt="Οθόνη αρχικής — αναζήτηση και πρόσφατες ενημερώσεις" width="390" height="844" loading="lazy" />
+                </div>
+                <p class="preview-caption">Περιηγηθείτε, φιλτράρετε και ανακαλύψτε νομοθεσία με κατηγορίες και ημερομηνίες.</p>
+              </div>
+            </article>
+            <article class="preview-panel" data-panel="detail">
+              <div class="preview-label">[ Λεπτομέρειες ]</div>
+              <div class="preview-content">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/detail.png" alt="Οθόνη νόμου — χρονολόγιο νομοθετικής διαδικασίας" width="390" height="844" loading="lazy" />
+                </div>
+                <p class="preview-caption">Χρονολόγιο σταδίων, εναλλαγή νομικού κειμένου και απλής εξήγησης.</p>
+              </div>
+            </article>
+            <article class="preview-panel" data-panel="summary">
+              <div class="preview-label">[ Περίληψη ]</div>
+              <div class="preview-content">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/detail-summary.png" alt="Δομημένη περίληψη — Σκοπός και Κύριες αλλαγές" width="390" height="844" loading="lazy" />
+                </div>
+                <p class="preview-caption">Δομημένες ενότητες με αναφορές σε άρθρα — Σκοπός, Κύριες αλλαγές και άλλα.</p>
+              </div>
+            </article>
+            <article class="preview-panel" data-panel="trust">
+              <div class="preview-label">[ Αξιοπιστία ]</div>
+              <div class="preview-content">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/trust.png" alt="Disclaimer και ρυθμίσεις εμπιστοσύνης" width="390" height="844" loading="lazy" />
+                </div>
+                <p class="preview-caption">Σαφής disclaimer, επίσημες πηγές και διαφάνεια — όχι νομική συμβουλή.</p>
+              </div>
+            </article>
+          </div>
+          <div class="preview-dots" role="tablist" aria-label="Επιλογή προεπισκόπησης">
+            <button class="preview-dot active" role="tab" aria-selected="true" aria-label="Αρχική" data-index="0"></button>
+            <button class="preview-dot" role="tab" aria-selected="false" aria-label="Λεπτομέρειες" data-index="1"></button>
+            <button class="preview-dot" role="tab" aria-selected="false" aria-label="Περίληψη" data-index="2"></button>
+            <button class="preview-dot" role="tab" aria-selected="false" aria-label="Αξιοπιστία" data-index="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pipeline">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Τεχνολογία</p>
+          <h2>Από το ΦΕΚ στην κατανόηση</h2>
+          <p class="section-lead">
+            Ένα pipeline που συλλέγει, επεξεργάζεται και τεκμηριώνει — με RAG και αξιολόγηση ποιότητας.
+          </p>
+        </header>
+        <div class="pipeline reveal">
+          <div class="pipeline-step">
+            <div class="pipeline-node"><span>01</span></div>
+            <h3>Συλλογή</h3>
+            <p>Crawler για Βουλή &amp; ΦΕΚ — αυτόματη ανακάλυψη νέων κειμένων.</p>
+          </div>
+          <div class="pipeline-connector" aria-hidden="true"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-node"><span>02</span></div>
+            <h3>Επεξεργασία</h3>
+            <p>OCR, chunking και ευρετηρίαση σε vector store για ακριβή ανάκτηση.</p>
+          </div>
+          <div class="pipeline-connector" aria-hidden="true"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-node"><span>03</span></div>
+            <h3>Σύνοψη</h3>
+            <p>LLM με RAG grounding — δομημένη έξοδος, όχι ελεύθερη παράφραση.</p>
+          </div>
+          <div class="pipeline-connector" aria-hidden="true"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-node"><span>04</span></div>
+            <h3>Αξιολόγηση</h3>
+            <p>Έλεγχος ποιότητας πριν τη δημοσίευση — διαφάνεια και αξιοπιστία.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-summary" id="trust">
+      <div class="container">
+        <div class="summary-layout">
+          <div class="summary-text reveal">
+            <p class="section-eyebrow">Δομή περιλήψης</p>
+            <h2>Κάθε νόμος, ίδιος σκελετός</h2>
+            <p>
+              Η δομή δεν είναι διακοσμητική — είναι το προϊόν. Ξέρετε πού να ψάξετε για σκοπό,
+              ποιους αφορά και τι αλλάζει πραγματικά.
+            </p>
+          </div>
+          <ul class="summary-sections reveal reveal-delay-1">
+            <li><span class="summary-num">01</span><div><strong>Σύνοψη</strong><p>Σύντομη επισκόπηση σε απλή ελληνική.</p></div></li>
+            <li><span class="summary-num">02</span><div><strong>Σκοπός</strong><p>Τι επιδιώκει το νομοθετικό μέτρο.</p></div></li>
+            <li><span class="summary-num">03</span><div><strong>Ποιους αφορά</strong><p>Ομάδες και φορείς που επηρεάζονται.</p></div></li>
+            <li><span class="summary-num">04</span><div><strong>Οικονομική διάσταση</strong><p>Όταν υπάρχει ουσιαστική fiscal επίδραση.</p></div></li>
+            <li><span class="summary-num">05</span><div><strong>Κύριες αλλαγές</strong><p>Συγκεκριμένες νομικές τροποποιήσεις με άρθρα.</p></div></li>
+            <li><span class="summary-num">06</span><div><strong>Επίμαχα σημεία</strong><p>Σημεία συζήτησης — χωρίς υπερβολές.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="get-started">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="gavel-smash" aria-hidden="true">
+            <div class="gavel-smash-gavel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381"/>
+                <path d="m16 16 6-6"/>
+                <path d="m21.5 10.5-8-8"/>
+                <path d="m8 8 6-6"/>
+                <path d="m8.5 7.5 8 8"/>
+              </svg>
+            </div>
+            <span class="gavel-smash-block"></span>
+          </div>
+          <h2>Το Civix είναι δικό σας.</h2>
+          <p>
+            Τοπικό, εστιασμένο στην ελληνική νομοθεσία και σχεδιασμένο για εμπιστοσύνη.
+            Τα δεδομένα σας, οι πηγές σας.
+          </p>
+          <ul class="cta-tags">
+            <li>Self-hosted pipeline</li>
+            <li>RAG-grounded</li>
+            <li>ΦΕΚ &amp; Βουλή</li>
+            <li>Χωρίς telemetry</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="gavel-icon" aria-hidden="true">
+          <svg><use href="#icon-gavel"/></svg>
+        </span>
+        <span>Civix Greece</span>
+      </div>
+      <p class="footer-disclaimer">
+        Οι περιλήψεις ενδέχεται να περιέχουν σφάλματα· δεν αποτελούν νομική συμβουλή.
+        Επαληθεύστε πάντα το επίσημο κείμενο.
+      </p>
+      <p class="footer-copy">&copy; 2026 Civix · Νομοθεσία σε απλή γλώσσα</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
