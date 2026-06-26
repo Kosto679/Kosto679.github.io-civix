@@ -474,36 +474,30 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  align-items: start;
 }
 
 .preview-panel {
+  position: relative;
+  z-index: 1;
   background: var(--dark-card);
   border: 1px solid var(--dark-border);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
   cursor: pointer;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), flex-grow var(--transition);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.preview-panel:hover,
 .preview-panel.active {
-  border-color: rgba(102, 175, 254, 0.4);
-  box-shadow: 0 0 0 1px rgba(102, 175, 254, 0.15), 0 20px 50px rgba(0, 0, 0, 0.4);
-  transform: scale(1.02);
+  border-color: rgba(102, 175, 254, 0.35);
 }
 
-.preview-panel:not(.active) .preview-content {
-  opacity: 0.55;
-  max-height: 120px;
+.preview-content {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  transition: opacity var(--transition), max-height var(--transition);
-}
-
-.preview-panel.active .preview-content,
-.preview-panel:hover .preview-content {
-  opacity: 1;
-  max-height: 600px;
 }
 
 .preview-label {
@@ -551,13 +545,89 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
   overflow: hidden;
+  aspect-ratio: 390 / 844;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .phone-frame img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 16px;
   display: block;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Desktop: stretch animation inside a locked row height (no layout jump) */
+@media (min-width: 961px) {
+  .preview-track {
+    /* Reserve space for the fully expanded panel so the section never reflows */
+    min-height: clamp(540px, 68vw, 740px);
+  }
+
+  .preview-panel {
+    transition:
+      transform 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.38s ease,
+      border-color 0.38s ease,
+      opacity 0.3s ease;
+  }
+
+  .preview-content {
+    max-height: 8.5rem;
+    opacity: 0.55;
+    transition:
+      max-height 0.42s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.32s ease;
+  }
+
+  .preview-panel.active .preview-content {
+    max-height: 620px;
+    opacity: 1;
+  }
+
+  .preview-track:hover .preview-panel:not(:hover) {
+    opacity: 0.48;
+  }
+
+  .preview-track:hover .preview-panel:not(:hover) .preview-content {
+    max-height: 8.5rem;
+    opacity: 0.42;
+  }
+
+  .preview-panel:hover {
+    z-index: 3;
+    opacity: 1;
+    transform: scale(1.02);
+    border-color: rgba(102, 175, 254, 0.4);
+    box-shadow: 0 0 0 1px rgba(102, 175, 254, 0.15), 0 20px 50px rgba(0, 0, 0, 0.4);
+  }
+
+  .preview-panel:hover .preview-content {
+    max-height: 620px;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @media (min-width: 961px) {
+    .preview-panel,
+    .preview-content {
+      transition: none;
+    }
+
+    .preview-panel:hover {
+      transform: none;
+    }
+
+    .preview-content,
+    .preview-panel.active .preview-content,
+    .preview-panel:hover .preview-content {
+      max-height: none;
+      opacity: 1;
+    }
+  }
 }
 
 /* ─── Pipeline ─── */
@@ -881,10 +951,15 @@ ul {
 
   .preview-track {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
-  .preview-panel:not(.active) .preview-content {
+  .preview-content {
     max-height: none;
+    opacity: 1;
+  }
+
+  .preview-track:hover .preview-panel {
     opacity: 1;
   }
 
